@@ -1,0 +1,163 @@
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+
+body{
+  font: 1.6rem helvetica;
+  height: 100vh;
+  margin: 0rem;
+}
+
+#root{
+  height: 100%;
+}
+
+
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer"
+  ;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 7rem 1fr 5rem;
+  height: 100%;
+}
+
+.header{
+  grid-area: header;
+  background-color: #b8c7d6;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+}
+
+.main{
+  grid-area: main;
+  margin: 0px;
+}
+
+
+.footer{
+  grid-area: footer;
+  /* background-color: aquamarine; */
+  background-color: #b8c7d6;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: bolder;
+}
+
+/*  Gird */
+.ui_grid{
+  height: 85vh;
+  display: grid;
+  justify-content: center;
+  align-items: stretch;
+  grid-template-columns: 15rem 15rem 15rem 15rem 15rem 15rem 15rem 15rem 15rem 15rem  ;
+  grid-template-rows: 10rem 10rem 10rem 10rem 10rem;
+}
+
+.box{
+  background-color: rgb(123, 150, 240);
+
+  display: inline-block;
+  color: black;
+  text-align: center;
+  
+  /* background-color: burlywood; */
+  padding: 1rem;
+  /* border: 0.1rem solid black; */
+  /* height: 5rem;
+  width: 5rem; */
+}
+
+/* button */
+
+.button_start{
+  /* height: 4rem;
+  width: 6rem; */
+  color: black;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: medium;
+}
+button :hover{
+  border: 0.2rem solid grey;
+}
+
+.button_down{
+  position: fixed;
+  left: 15rem;
+  bottom: 15rem;
+  height: 5rem;
+  width: 5rem;
+  font-weight: bolder;
+}
+.button_up{
+  position: fixed;
+  left: 15rem;
+  bottom: 20rem;
+  height: 5rem;
+  width: 5rem;
+  font-weight: bolder;
+}
+.button_left{
+  position: fixed;
+  left: 10rem;
+  bottom: 15rem;
+  height: 5rem;
+  width: 5rem;
+  font-weight: bolder;
+}
+.button_right{
+  position: fixed;
+  left: 20rem;
+  bottom: 15rem;
+  height: 5rem;
+  width: 5rem;
+  font-weight: bolder;
+}
+
+
+
+
+.circular{
+  display: inline-block;
+  height: 6rem;
+  width: 6rem;
+  text-align: center;
+  /* border-radius: 50%; */
+  
+}
+
+.red{
+  background-color: rgb(180, 124, 124);
+}
+
+.green{
+  background-color: green;
+}
+
+/* point */
+.point{
+  display: inline-block;
+  /* height: 4rem;
+  width: 6rem; */
+  color: black;
+  text-align: center;
+  border: 0.1rem solid black;
+  background-color: greenyellow;
+  padding: 1rem;
+  font-weight: bolder;
+}
