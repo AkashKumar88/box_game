@@ -60,7 +60,7 @@ body{
 
 /*  Gird */
 .ui_grid{
-  height: 85vh;
+  height: 65vh;
   display: grid;
   justify-content: center;
   align-items: stretch;
