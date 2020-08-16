@@ -20,13 +20,14 @@ function Game(props){
                                 ? 
                                 <div className='circular green'><div>Goal</div> </div> 
                                 : 
-                                <div className={props.position === box ? `circular red` : `cell${box}`}>
+                                <div className={props.position === box ? `circular red` : `cell`}>
                                     {props.position === box ? `Player` : ''}
                                 </div>
-                            }    
+                            }  
                         </div>)}
-            </div>
             <Direction onButtonClick={props.onButtonClick} position={props.position}/>
+            </div>
+            
         </div>
         
     );

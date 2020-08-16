@@ -60,33 +60,37 @@ body{
 
 /*  Gird */
 .ui_grid{
-  height: 65vh;
+  height: 80vh;
   display: grid;
   justify-content: center;
   align-items: stretch;
+  justify-items: auto;
   grid-template-columns: 15rem 15rem 15rem 15rem 15rem 15rem 15rem 15rem 15rem 15rem  ;
-  grid-template-rows: 10rem 10rem 10rem 10rem 10rem;
+  grid-template-rows: auto;
 }
 
 .box{
   background-color: rgb(123, 150, 240);
 
-  display: inline-block;
+  /* display: inline-block; */
   color: black;
   text-align: center;
-  
-  /* background-color: burlywood; */
-  padding: 1rem;
-  /* border: 0.1rem solid black; */
-  /* height: 5rem;
-  width: 5rem; */
+  height: 100%;
+  /* width: 6rem; */
+  /* padding: 1rem; */
+
+}
+
+.cell{
+  display: inline-block;
+  height: 6rem;
+  width: 6rem;
+  text-align: center;
 }
 
 /* button */
 
 .button_start{
-  /* height: 4rem;
-  width: 6rem; */
   color: black;
   padding: 1rem;
   font-weight: bold;
@@ -97,7 +101,7 @@ button :hover{
 }
 
 .button_down{
-  position: fixed;
+  position: absolute;
   left: 15rem;
   bottom: 15rem;
   height: 5rem;
@@ -105,7 +109,7 @@ button :hover{
   font-weight: bolder;
 }
 .button_up{
-  position: fixed;
+  position: absolute;
   left: 15rem;
   bottom: 20rem;
   height: 5rem;
@@ -113,7 +117,7 @@ button :hover{
   font-weight: bolder;
 }
 .button_left{
-  position: fixed;
+  position: absolute;
   left: 10rem;
   bottom: 15rem;
   height: 5rem;
@@ -121,7 +125,7 @@ button :hover{
   font-weight: bolder;
 }
 .button_right{
-  position: fixed;
+  position: absolute;
   left: 20rem;
   bottom: 15rem;
   height: 5rem;
